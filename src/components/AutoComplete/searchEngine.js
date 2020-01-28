@@ -23,13 +23,14 @@ function getWordMap(summaryId, summary) {
 }
 function preprocess() {
  for (let i = 0; i < data.summaries.length; i++) {
-  const { titles, queries, summaries } = data;
+  const { titles, queries, summaries, authors } = data;
   const { id, summary } = summaries[i];
   summaryIdToSummary[id] = {
    id: id,
    summary,
    title: titles[i],
-   query: queries[i]
+   query: queries[i],
+   author: authors[i].author
   };
   getWordMap(id, summary);
  }

@@ -51,13 +51,19 @@ button {
 body {
  padding: 20px;
 }
-
+ul {
+ background: rgb(247, 241, 241);
+ display: inline-block;
+ padding: 20px;
+}
 li {
  list-style: none;
  cursor: pointer;
  padding: 5px;
 }
-
+li:hover {
+ background: lightblue;
+}
 table {
  border: solid tomato 1px;
  width: 100%;

@@ -18,6 +18,7 @@ function AutoComplete({ noOfSuggestions, addSelectedBook }) {
   setSelected("");
   setInput("");
  };
+
  useEffect(() => {
   const searchResult = search(input);
   setSuggestions(searchResult, noOfSuggestions);
@@ -27,6 +28,7 @@ function AutoComplete({ noOfSuggestions, addSelectedBook }) {
   const { title } = selected;
   setInput(title);
  }, [selected]);
+
  return (
   <>
    <SearchInput setInput={onTextInput} input={input} selectBook={selectBook} />

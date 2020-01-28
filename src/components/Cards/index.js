@@ -9,14 +9,21 @@ function Cards({ selectedBooks }) {
    <>
     <h1>Cards</h1>
     <div className="card-container">
-     {selectedBooks.map(({ title, summary }, index) => {
-      return <Card key={index} title={title} summary={summary} />;
+     {selectedBooks.map(({ title, summary, author }, index) => {
+      return (
+       <Card key={index} title={title} summary={summary} author={author} />
+      );
      })}
     </div>
    </>
   );
  }
- return null;
+ return (
+  <>
+   <h1>Cards</h1>
+   <p>Empty</p>
+  </>
+ );
 }
 
 export default Cards;
