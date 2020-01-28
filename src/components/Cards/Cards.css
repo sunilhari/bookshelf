@@ -1,0 +1,6 @@
+.card-container {
+}
+.card {
+ border: solid black 1px;
+ margin-bottom: 10px;
+}
